@@ -1,0 +1,146 @@
+
+* {
+ font-family: Segoe UI;
+}
+
+
+.remark-slide-content:not(.title-slide){
+  background-image: url(images/lesbibliotheques-udem-noir-bleu.png);
+background-position: top right;
+}
+
+.title-slide {
+  
+  background-color: #333333;
+}
+
+.title-slide {
+  background-image: url('images/rdm.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+
+.large { font-size: 120% }
+.small { font-size: 90% }
+.footnotesize { font-size: 80% }
+.scriptsize { font-size: 70% }
+.tiny { font-size: 60% }
+.verytiny { font-size: 40% }
+
+
+.blue { color: #003366; }
+.bold { font-weight: bold; }
+.bolder { font-weight: bolder; }
+
+
+.content-box { 
+    box-sizing: content-box;
+    	background-color: #e2e2e2;
+}
+
+
+.content-box-blue,
+.content-box-border {
+    border-radius: 5px;
+    margin: 0 0 5px;
+    overflow: hidden;
+    padding: 2px;
+    width: 100%;
+}
+
+.content-box-blue {
+      background-color: rgba(0, 107, 182,.75); 
+}
+
+
+.background {
+   background-color: #333333;
+}
+
+a:link {
+  color: #015793;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #015793;
+}
+
+
+
+.content-box-border {
+  border-style: solid;
+  /* set opacity in last decimal value of rgba */
+  border-color: rgba(000, 107, 182, .85)
+}
+
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.justify-left {
+  text-align: left;
+}
+
+.justify-right {
+  text-align: right;
+  float: right;
+  clear: right;
+}
+
+.text-left {
+    float:left;
+}
+
+.justify-center {
+  text-align: center;
+}
+
+
+.footer-note {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    height: 25px;
+    font-size: 0.5em;
+}
+
+
+h1, h2, h3 {
+  color: #006BB6;
+  line-height: 0.9em;
+}
+
+
+h4 {
+font-size: 0.7em;
+color: #006BB6;
+}
+
+h2 {
+font-size: 0.9em;
+color: #006BB6;
+}
+
+h3 {
+font-size: 0.8em;
+color: #006BB6;
+}
+
+.inverse {
+  background-color: #003366;
+  color: #B5B5B5;
+  text-shadow: 0 0 20px #728302;
+}
+
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #B5B5B5;
+  line-height: 0.8em;
+}
+
+

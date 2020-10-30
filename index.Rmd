@@ -1,23 +1,18 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>Gestion et diffusion des données de recherche</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="  Caroline Patenaude    Bibliothèque des lettres et sciences humaines" />
-    <meta name="date" content="2020-10-30" />
-    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link rel="stylesheet" href="gdr.css" type="text/css" />
-  </head>
-  <body>
-    <textarea id="source">
-class: right, top, title-slide
-
-# Gestion et diffusion des données de recherche
-### <br /> Caroline Patenaude<br /> <br /> Bibliothèque des lettres et sciences humaines
-### 2020-10-30
-
 ---
-
+title: "Gestion et diffusion des données de recherche"
+author: "<br /> Caroline Patenaude<br /> <br /> Bibliothèque des lettres et sciences humaines"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "gdr.css"]
+    nature:
+      titleSlideClass: ["right", "top"]
+lib_dir: libs
+nature:
+  highlightStyle: github
+  highlightLines: true
+countIncrementalSlides: true
+---
 
 class:  middle
 
@@ -25,7 +20,7 @@ class:  middle
 
 ### Objectifs
 
-&lt;br&gt;
+<br>
 
 - Contexte général de la gestion et du partage des données de recherche
 - Acteurs impliqués
@@ -36,7 +31,9 @@ class:  middle
 
 .pull-right[
 
-&lt;img src="images/Image1.jpg" width="300px" /&gt;
+```{r, out.width = "300px", echo = FALSE}
+knitr::include_graphics("images/Image1.jpg")
+```
 
 .verytiny[
 https://www.elsevier.com/connect/open-science-needs-open-minds 
@@ -47,7 +44,9 @@ https://www.elsevier.com/connect/open-science-needs-open-minds
 
 ## libre accès et données ouvertes
 
-&lt;img src="images/logo.png" width="1529" /&gt;
+```{r,  echo = FALSE}
+knitr::include_graphics("images/logo.png")
+```
 
 - [Open Government Canada](http://open.canada.ca/en/open-data)
 - [Données Québec: Accueil](https://www.donneesquebec.ca/)
@@ -60,17 +59,17 @@ https://www.elsevier.com/connect/open-science-needs-open-minds
 ## Ouverture des données gouvernementales à des fins de recherche
 
 
-Mémoire, Rémi Quirion, Scientifique en chef, 2015&lt;sup&gt;1&lt;/sup&gt;
+Mémoire, Rémi Quirion, Scientifique en chef, 2015<sup>1</sup>
 
 .scriptsize[
-&gt; Faisant de la recherche une priorité stratégique pour le développement du Québec et le mieux être des citoyens, nous croyons **qu’il ne suffit pas « d’ouvrir » l’accès aux données gouvernementales par le biais de la mise en ligne de jeux de données ouvertes sélectionnées par les ministères et organismes**. Il faut aller plus loin. Il faut offrir à des chercheurs, dont les projets de recherche sont reconnus par leurs pairs et approuvés par un comité d’éthique, **un accès aux données administratives brutes détenues par des ministères et organismes gouvernementaux**. (p.5)
+> Faisant de la recherche une priorité stratégique pour le développement du Québec et le mieux être des citoyens, nous croyons **qu’il ne suffit pas « d’ouvrir » l’accès aux données gouvernementales par le biais de la mise en ligne de jeux de données ouvertes sélectionnées par les ministères et organismes**. Il faut aller plus loin. Il faut offrir à des chercheurs, dont les projets de recherche sont reconnus par leurs pairs et approuvés par un comité d’éthique, **un accès aux données administratives brutes détenues par des ministères et organismes gouvernementaux**. (p.5)
 
-&gt; L’activité de recherche ne peut se faire sans un accès efficace et en temps utile à des données « personnelles » (au sens de la Loi sur l’accès) et de qualité. Dans ce changement de culture que souhaite instaurer le gouvernement, il faut susciter un **biais favorable pour les activités de recherche approuvées par des pairs et des comités d’éthique, notamment celles menées par des chercheurs financés par des fonds publics fédéraux et provinciaux**. (p.7)
+> L’activité de recherche ne peut se faire sans un accès efficace et en temps utile à des données « personnelles » (au sens de la Loi sur l’accès) et de qualité. Dans ce changement de culture que souhaite instaurer le gouvernement, il faut susciter un **biais favorable pour les activités de recherche approuvées par des pairs et des comités d’éthique, notamment celles menées par des chercheurs financés par des fonds publics fédéraux et provinciaux**. (p.7)
 ]
 
-&lt;br&gt;
+<br>
 
--&gt; **Projet de loi no 64** - [*Loi modernisant des dispositions législatives en matière de protection des renseignements personnels*](http://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-64-42-1.html)
+-> **Projet de loi no 64** - [*Loi modernisant des dispositions législatives en matière de protection des renseignements personnels*](http://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-64-42-1.html)
 
 .footer-note[
 [1] [Orientations gouvernementales pour un gouvernement plus transparent, dans le respect du droit à la vie privée et la protection des renseignements personnels](http://www.scientifique-en-chef.gouv.qc.ca/wp-content/uploads/2015-09-24-Memoire_gouv_transparent_FRQ.pdf)
@@ -82,21 +81,27 @@ Mémoire, Rémi Quirion, Scientifique en chef, 2015&lt;sup&gt;1&lt;/sup&gt;
 
 ## Des données gouvernementales aux données de recherche
 
-- Reconnaissance de la valeur des données -&gt; Accès aux données devient enjeu social, économique et politique &gt; Retour sur l’investissement gouv.
+- Reconnaissance de la valeur des données -> Accès aux données devient enjeu social, économique et politique > Retour sur l’investissement gouv.
 - Développement de nouvelles technologies et infrastructures permettant la diffusion et l’exploitation de gros volume de données.
 
-&lt;img src="images/fleche.png" width="50px" style="display: block; margin: auto;" /&gt;
+```{r, echo = FALSE, fig.align= "center", out.width = "50px"}
+knitr::include_graphics("images/fleche.png")
+```
 
 - Mobilisation pour faire des données un produit de la recherche scientifique au même titre que les articles = partagées, citées,  créditées, réutilisées.
 - Implication d’une multitude d’intervenants visant à développer des normes, standards, politiques, services et infrastructures favorisant le partage de données de recherche.
 
-&lt;img src="images/data.png" width="155px" style="display: block; margin: auto 0 auto auto;" /&gt;
+```{r, echo = FALSE, fig.align= "right", out.width = "155px"}
+knitr::include_graphics("images/data.png")
+```
 
 ---
 
 ## Mobilisation des acteurs entourant les chercheurs
 
-&lt;img src="images/institutions2.png" width="1503" style="display: block; margin: auto;" /&gt;
+```{r, echo = FALSE, fig.align= "center"}
+knitr::include_graphics("images/institutions2.png")
+```
 
 ---
 
@@ -109,11 +114,11 @@ Mémoire, Rémi Quirion, Scientifique en chef, 2015&lt;sup&gt;1&lt;/sup&gt;
 
 #### Stratégie institutionnelle
 
-&gt; Chaque établissement qui administre des fonds des trois organismes doit créer une stratégie institutionnelle de gestion des données de recherche.
+> Chaque établissement qui administre des fonds des trois organismes doit créer une stratégie institutionnelle de gestion des données de recherche.
 
 #### Plans de gestion des données
 
-&gt; Les organismes incitent les demandeurs à dresser des plans de gestion des données comme étape essentielle de la conception de projets de recherche. Pour certaines occasions de financement, les organismes subventionnaires peuvent demander que les plans de gestion des données soient soumis à l’organisme approprié au moment de la demande; dans ces cas, les plans de gestion des données peuvent être examinés dans le processus de prise de décision.
+> Les organismes incitent les demandeurs à dresser des plans de gestion des données comme étape essentielle de la conception de projets de recherche. Pour certaines occasions de financement, les organismes subventionnaires peuvent demander que les plans de gestion des données soient soumis à l’organisme approprié au moment de la demande; dans ces cas, les plans de gestion des données peuvent être examinés dans le processus de prise de décision.
 
 ---
 
@@ -127,9 +132,9 @@ Mémoire, Rémi Quirion, Scientifique en chef, 2015&lt;sup&gt;1&lt;/sup&gt;
 
 #### Dépôt des données
 
-&gt; Les détenteurs de subvention sont tenus de déposer, dans un dépôt numérique reconnu, les données de recherche numérique, les métadonnées et les codes qui appuient directement les conclusions de la recherche dans les publications de revues, des préimpressions et d’autres résultats de recherche qui découlent de la recherche appuyée par les organismes subventionnaires. Ce dépôt numérique assurera l’entreposage, la préservation et la conservation sûrs des données. **Les organismes incitent les chercheurs à donner accès aux données pour autant que les exigences éthiques, juridiques et commerciales le permettent et conformément aux normes propres à leurs disciplines**.
+> Les détenteurs de subvention sont tenus de déposer, dans un dépôt numérique reconnu, les données de recherche numérique, les métadonnées et les codes qui appuient directement les conclusions de la recherche dans les publications de revues, des préimpressions et d’autres résultats de recherche qui découlent de la recherche appuyée par les organismes subventionnaires. Ce dépôt numérique assurera l’entreposage, la préservation et la conservation sûrs des données. **Les organismes incitent les chercheurs à donner accès aux données pour autant que les exigences éthiques, juridiques et commerciales le permettent et conformément aux normes propres à leurs disciplines**.
 
--&gt; [Exigences des principaux organismes subventionnaires](https://bib.umontreal.ca/gerer-diffuser/gestion-donnees-recherche?tab=2302) (CRSH, IRSC, CRSNG, NIH...)
+-> [Exigences des principaux organismes subventionnaires](https://bib.umontreal.ca/gerer-diffuser/gestion-donnees-recherche?tab=2302) (CRSH, IRSC, CRSNG, NIH...)
 
 ---
 
@@ -160,7 +165,9 @@ Comité consultatif sur la GDR ([BRDV](https://recherche.umontreal.ca/services-a
 #### [Extrait du plan stratégique 2016-2021 Transcender les frontières](https://transformation.umontreal.ca/documents/plan-daction-2016-2021-transcender-les-frontieres/)
 
 
-&lt;img src="images/udem.png" width="600px" style="display: block; margin: auto;" /&gt;
+```{r, out.width = "600px", echo = FALSE, fig.align= "center"}
+knitr::include_graphics("images/udem.png")
+```
 
 
 ---
@@ -169,10 +176,12 @@ Comité consultatif sur la GDR ([BRDV](https://recherche.umontreal.ca/services-a
 
 #### On reconnaît généralement quatre formes de partage de données de recherche:
 
-&lt;img src="images/editeur.png" width="500px" style="display: block; margin: auto;" /&gt;
+```{r, out.width = "500px", echo = FALSE, fig.align= "center"}
+knitr::include_graphics("images/editeur.png")
+```
 
 - Selon [Wiley](https://hub.wiley.com/community/exchanges/discover/blog/2014/11/03/how-and-why-researchers-share-data-and-why-they-dont?referrer=exchanges), le matériel supplémentaire à un article est la forme la plus commune de partage de données dans tous les domaines.
-- Mais les éditeurs commencent à voir le matériel supplémentaire comme un poids difficile à gérer. Impose donc des limites de volume ou externalisent stockage des données &gt; Ex: [Journal of Neuroscience](http://www.jneurosci.org/content/30/32/10599) (2010)
+- Mais les éditeurs commencent à voir le matériel supplémentaire comme un poids difficile à gérer. Impose donc des limites de volume ou externalisent stockage des données > Ex: [Journal of Neuroscience](http://www.jneurosci.org/content/30/32/10599) (2010)
 - Optent de plus en plus pour des partenariats avec des dépôts externes.
 - Politiques et pratiques varient entre les éditeurs et entre périodiques d'un même éditeur vu les différences disciplinaires importantes 
 
@@ -201,7 +210,7 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 ### Les éditeurs et périodiques
 
 
-&lt;br&gt; 
+<br> 
 
 
 
@@ -213,7 +222,9 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 ]
 
 .pull-right[
-&lt;img src="images/psycho.png" width="300px" /&gt;
+```{r, out.width = "300px", echo = FALSE}
+knitr::include_graphics("images/psycho.png")
+```
 ]
 
 .footnote[[*][Peer Reviewers’ Openness Initiative
@@ -228,18 +239,20 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 - Mené a la révision de l'[APSA's Guide to Professional Ethics in Political Science](http://www.apsanet.org/portals/54/Files/Publications/APSAEthicsGuide2012.pdf)
 
 .justify-right[
-&lt;img src="images/ps.jpg" width="100px" /&gt;
+```{r, out.width = "100px", echo = FALSE}
+knitr::include_graphics("images/ps.jpg")
+```
     ]
     
-- Janvier 2014 symposium DA-RT &gt; [PS: Political Science &amp; Politics](https://www.cambridge.org/core/journals/ps-political-science-and-politics/issue/journal-psc-volume-47-issue-1/CF30DAAFF46CE834E55ABEC5032703A9)
+- Janvier 2014 symposium DA-RT > [PS: Political Science & Politics](https://www.cambridge.org/core/journals/ps-political-science-and-politics/issue/journal-psc-volume-47-issue-1/CF30DAAFF46CE834E55ABEC5032703A9)
 
-&lt;br&gt;
+<br>
 
 *Data Access and Research Transparency (DA-RT): A Joint Statement by Political Science Journal Editors*
 
 .footnotesize[
-&gt; Transparency requires making visible both the empirical foundation and the logic of inquiry of research. We agree that by January 15, 2016 we will:
-&gt; **Require authors to ensure that cited data are available at the time of publication through a trusted digital repository. Journals may specify which trusted digital repository shall be used (for example if they have their own dataverse).** If cited data are restricted (e.g., classified, require confidentiality protections, were obtained under a non-disclosure agreement, or have inherent logistical constraints), authors must notify the editor at the time of submission. The editor shall have full discretion to follow their journal’s policy on restricted data, including declining to review the manuscript or granting an exemption with or without conditions. The editor shall inform the author of that decision prior to review.”
+> Transparency requires making visible both the empirical foundation and the logic of inquiry of research. We agree that by January 15, 2016 we will:
+> **Require authors to ensure that cited data are available at the time of publication through a trusted digital repository. Journals may specify which trusted digital repository shall be used (for example if they have their own dataverse).** If cited data are restricted (e.g., classified, require confidentiality protections, were obtained under a non-disclosure agreement, or have inherent logistical constraints), authors must notify the editor at the time of submission. The editor shall have full discretion to follow their journal’s policy on restricted data, including declining to review the manuscript or granting an exemption with or without conditions. The editor shall inform the author of that decision prior to review.”
 ]
 ---
 
@@ -249,7 +262,9 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 
 
 .justify-right[
-&lt;img src="images/apsa.png" width="100px" /&gt;
+```{r, out.width = "100px", echo = FALSE}
+knitr::include_graphics("images/apsa.png")
+```
     ]
     
 - What norms, principles, or considerations should guide authors and reviewers in pursuing and judging analytic transparency for non-statistical forms of inquiry?
@@ -261,12 +276,12 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 
 ---
 
-### Données de recherche &gt; de quoi parle-t-on?
+### Données de recherche > de quoi parle-t-on?
 
 **Multitude de définitions - grande variation selon les disciplines en fonction de leurs objets de recherche**
-&gt; les données de la recherche sont définies comme des enregistrements factuels (chiffres, textes, images et sons), qui sont utilisés comme sources principales pour la recherche scientifique et sont généralement reconnus par la communauté scientifique comme nécessaires pour valider les résultats de la recherche. - [Principes et lignes directrices de l'OCDE pour l'accès aux données de la recherche financée sur fonds publics](http://www.oecd.org/fr/sti/inno/38500823.pdf)
+> les données de la recherche sont définies comme des enregistrements factuels (chiffres, textes, images et sons), qui sont utilisés comme sources principales pour la recherche scientifique et sont généralement reconnus par la communauté scientifique comme nécessaires pour valider les résultats de la recherche. - [Principes et lignes directrices de l'OCDE pour l'accès aux données de la recherche financée sur fonds publics](http://www.oecd.org/fr/sti/inno/38500823.pdf)
 
-&lt;br&gt;
+<br>
 
 **Bref, matériaux de base de la recherche**:
 - De tous types: données expérimentales, observationelles, de simulation/code
@@ -277,10 +292,10 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 ---
 
 
-### Données de recherche &gt; diffusion à géométrie variable
+### Données de recherche > diffusion à géométrie variable
 
 - L'ouverture des données de recherche: importante variation disciplinaire.
-- Les sciences pures ont une plus grande tradition de partage, surtout via matériel supplémentaire ou dépôt disciplinaire &gt; norme plutôt que l’exception. 
+- Les sciences pures ont une plus grande tradition de partage, surtout via matériel supplémentaire ou dépôt disciplinaire > norme plutôt que l’exception. 
 - Beaucoup moins de partage en sciences sociales ou informels entre collègues. Les chercheurs gèrent leurs données selon leurs propres besoins immédiats. 
 
 **Mais longue histoire de partage aussi en sciences sociales** :
@@ -289,13 +304,15 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 - Roper Public Opinion Research Center (1957). 
 - Institute for Social Research (UMichigan)
 - Inter-University Consortium for Political Research (ICPSR).  
-- Michigan Election Studies &gt; American National Election Studies.
+- Michigan Election Studies > American National Election Studies.
 ]
 
 ]
 
 .pull-right[
-&lt;img src="images/roper.jpg" width="200px" /&gt;
+```{r, out.width = "200px", echo = FALSE}
+knitr::include_graphics("images/roper.jpg")
+```
 ]
 
 
@@ -313,7 +330,9 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 **Réticences générales**: Sentiment de perte de temps, manque de volonté sans retombés réelles, inutilité de la démarche, absence de reconnaissance, peur de la mauvaise utilisation/interprétation,... 
 
 .justify-right[
-&lt;img src="images/obstacles.jpg" width="300px" /&gt;
+```{r, out.width = "300px", echo = FALSE}
+knitr::include_graphics("images/obstacles.jpg")
+```
     ]
 
 
@@ -328,17 +347,19 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 - Réduire les coûts en évitant la duplication de recherches, la perte de données.
 - Intensifier la collaboration.
 - Accélérer le progrès scientifique.
-- Augmenter la visibilité et l’impact de la recherche &gt; Citations.
+- Augmenter la visibilité et l’impact de la recherche > Citations.
 - Enseignement.
 - Respecter les politiques des organismes subventionnaires.
 
 [Reproducibility: It Is Just Good Science](https://www.ncbi.nlm.nih.gov/pubmed/27029767)
 
 .justify-center[
-&lt;img src="images/repro.png" width="300px" /&gt;
+```{r, out.width = "300px", echo = FALSE}
+knitr::include_graphics("images/repro.png")
+```
     ]
     
-&lt;br&gt;
+<br>
 
 .footer-note[[Nature](nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)]
 
@@ -355,7 +376,9 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 **Réticences générales**: Sentiment de perte de temps, manque de volonté sans retombés réelles, inutilité de la démarche, absence de reconnaissance, peur de la mauvaise utilisation/interprétation,... 
 
 .justify-right[
-&lt;img src="images/obstacles.jpg" width="300px" /&gt;
+```{r, out.width = "300px", echo = FALSE}
+knitr::include_graphics("images/obstacles.jpg")
+```
     ]
 
 .footer-note[[Image](https://technofirmsoftware.wordpress.com/tag/data-loss-prevension/)]
@@ -372,12 +395,14 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 - Utiliser des Métadonnées  disciplinaires détaillées (DDI).
 - Utiliser dépôt disciplinaire spécialisé.
 
-&lt;br&gt;
+<br>
 
 [*How to make your data FAIR*](https://www.openaire.eu/how-to-make-your-data-fair)
 
 .justify-center[
-&lt;img src="images/fair.png" width="400px" /&gt;
+```{r, out.width = "400px", echo = FALSE}
+knitr::include_graphics("images/fair.png")
+```
     ]
 
 
@@ -385,7 +410,7 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 ---
 
 ### Le cycle de vie des données de recherche
-&lt;br&gt; 
+<br> 
 
 .pull-left[.full-width[
 - Ensemble d’activités qui traitent de  la collecte, l’organisation, la documentation, la préservation et la diffusion des données de recherche.
@@ -396,7 +421,9 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 ]
 
 .pull-right[
-&lt;img src="images/cycle.png" width="450px" /&gt;
+```{r, out.width = "450px", echo = FALSE}
+knitr::include_graphics("images/cycle.png")
+```
 ]
 
 
@@ -414,7 +441,7 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 
 - Se poser les bonnes questions dès le début du processus pour éviter les surprises et surcharge de travail à la fin.  
 
-&lt;br&gt; 
+<br> 
 
 - [Exemples de PGD Portage complétés et autres ressources](https://portagenetwork.ca/fr/outils-et-ressources/ressources-de-formation-de-portage/)  
 
@@ -427,14 +454,16 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 - [Example DMPs and guidance (Digital Curation Centre)](http://www.dcc.ac.uk/resources/data-management-plans/guidance-examples)
 
 ---
-### Outils de gestion de données de recherche &gt; 
+### Outils de gestion de données de recherche > 
 
 https://portagenetwork.ca/fr/
 
 **Initiative de l’ABRC**
 
 .justify-right[
-&lt;img src="images/portage.png" width="200px" /&gt;
+```{r, out.width = "200px", echo = FALSE}
+knitr::include_graphics("images/portage.png")
+```
     ]
 
 **Deux principaux objectifs** :
@@ -471,7 +500,7 @@ class:  middle, center, background
 
 .full-width[.content-box-border[
 **Bonnes pratiques**
-- Prioriser des formats répandus dans sa discipline et idéalement transférer en formats ouverts (ex: excel &gt; CSV, word &gt; txt/pdf, ...).
+- Prioriser des formats répandus dans sa discipline et idéalement transférer en formats ouverts (ex: excel > CSV, word > txt/pdf, ...).
 - Attention à la perte d’information ou de formatage.
 - Créer en amont des conventions de nommage de fichiers, de classification des dossiers et répertoires de travail, d’identification des versions, ...
 - Se familiariser avec les outils de nettoyage de données et de fichiers disponibles ([OpenRefine](http://openrefine.org/), [Bulk rename](https://www.bulkrenameutility.co.uk/),...).
@@ -574,7 +603,7 @@ class:  middle, center, background
 
 **Bonnes pratiques**
 - Attribuer les rôles et responsabilités de chacun.
-- Anticiper les coûts financiers &gt; demande de subvention.
+- Anticiper les coûts financiers > demande de subvention.
 - Déterminer la propriété intellectuelle des données. Consulter les [politiques de l’UdeM](http://www.recherche.umontreal.ca/la-recherche-a-ludem/vice-rectorat/normes-et-integrite/probite-intelectuelle/) sur la gestion des bases de données et la probité intellectuelle.
 ]]
 ---
@@ -589,7 +618,7 @@ class:  middle, center, background
 .full-width[.content-box-border[
 
 **Bonnes pratiques**
-- Recherche auprès d’individus &gt; formulaires de consentement obligatoires.
+- Recherche auprès d’individus > formulaires de consentement obligatoires.
 - Utiliser des outils d’anonymisation – identifiants directs et indirects: [ARX Anonymisation  Tool](https://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/), [packages R](https://cran.r-project.org/web/packages/sdcMicro/index.html).
 - Dépôts de données avec embargo, encryptage, restrictions d’utilisation.
 - Consulter les politique du [Bureau de l’éthique de la recherche](http://www.recherche.umontreal.ca/ethique-de-la-recherche/ethique/) avec les êtres humains de l’UdeM.
@@ -640,7 +669,9 @@ https://dataverse.scholarsportal.info/dataverse/montreal
 
 Guide: [Déposer des données sur Dataverse](https://guides.bib.umontreal.ca/ckfinder/ckeditor_assets/attachments/guide_eclair_-_deposer_dans_spdv_20190911.pdf)
 
-&lt;img src="images/dataverse.png" width="700px" style="display: block; margin: auto;" /&gt;
+```{r, out.width = "700px", echo = FALSE, fig.align= "center"}
+knitr::include_graphics("images/dataverse.png")
+```
 ---
 class: center, middle
 
@@ -648,10 +679,10 @@ class: center, middle
 
 ## Questions?
 
-&lt;br&gt;
+<br>
 Document créé avec le package R [**xaringan**](https://github.com/yihui/xaringan).
 
- &lt;br&gt;
+ <br>
  
 caroline.patenaude@umontreal.ca 
 
@@ -694,105 +725,3 @@ class: center, bottom
 --
 
 FIN
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create();
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
