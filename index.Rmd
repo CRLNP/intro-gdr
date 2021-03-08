@@ -114,11 +114,11 @@ knitr::include_graphics("images/institutions2.png")
 
 #### Stratégie institutionnelle
 
-> Chaque établissement qui administre des fonds des trois organismes doit créer une stratégie institutionnelle de gestion des données de recherche.
+> Chaque établissement qui administre des fonds des trois organismes doit créer une **stratégie institutionnelle de gestion des données de recherche**.
 
 #### Plans de gestion des données
 
-> Les organismes incitent les demandeurs à dresser des plans de gestion des données comme étape essentielle de la conception de projets de recherche. Pour certaines occasions de financement, les organismes subventionnaires peuvent demander que les plans de gestion des données soient soumis à l’organisme approprié au moment de la demande; dans ces cas, les plans de gestion des données peuvent être examinés dans le processus de prise de décision.
+> Les organismes **incitent les demandeurs à dresser des plans de gestion des données** comme étape essentielle de la conception de projets de recherche. Pour certaines occasions de financement, les organismes subventionnaires peuvent demander que les **plans de gestion des données soient soumis à l’organisme approprié au moment de la demande**; dans ces cas, les plans de gestion des données peuvent être examinés dans le processus de prise de décision.
 
 ---
 
@@ -142,11 +142,11 @@ knitr::include_graphics("images/institutions2.png")
 
 Les institutions américaines et britanniques ont développés des centres d’expertises, des programmes et des politiques plus «contraignantes» de GDR depuis plusieurs années déjà (UK Research Councils, Horizon 2020 , NIH, NSF,…)
 
-**Le Canada et le Québec sont à la traine mais se rattrapent**:
+**Le Canada et le Québec sont à la traine mais se rattrapent rapidement**:
 
 - Beaucoup de discussions, de comités, de rapports.
-- Plusieurs groupes impliqués: ABRC, Données de Recherche Canada, LCDRI, Calcul Canada, Canarie, …
-- Quelques dépôts de données (Dataverse de Scholar’s Portal, FRDR, SFU, UBC, UofA, dépôts disciplinaires tels IPY, VENUS, Neptune Canada).
+- Plusieurs groupes impliqués: [ABRC](https://www.carl-abrc.ca/fr/), [Données de Recherche Canada](https://www.rdc-drc.ca/fr/),  [Calcul Canada](https://www.computecanada.ca/?lang=fr), [Canarie](https://www.canarie.ca/rdm/), [NOIRN](https://www.engagedri.ca/), ...
+- Quelques dépôts de données ([Dataverse de Scholar’s Portal](https://dataverse.scholarsportal.info/), [FRDR](https://www.frdr-dfdr.ca/repo/), dépôts disciplinaires dont [CIOOS](https://catalogue.cioos.ca/)).
 
 
 **Peu de choses au Québec mais ça s’en vient**...
@@ -345,11 +345,10 @@ knitr::include_graphics("images/obstacles.jpg")
 - Permettre la réplication et la validation des résultats = transparence et intégrité.
 - Meilleure exploitation des données par de nouvelles analyses.
 - Réduire les coûts en évitant la duplication de recherches, la perte de données.
-- Intensifier la collaboration.
-- Accélérer le progrès scientifique.
+- Intensifier la collaboration et le progrès scientifique.
 - Augmenter la visibilité et l’impact de la recherche > Citations.
-- Enseignement.
 - Respecter les politiques des organismes subventionnaires.
+- Mais avant tout, c'est un investissement pour soi-même -> meilleure gestion = meilleure recherche!
 
 [Reproducibility: It Is Just Good Science](https://www.ncbi.nlm.nih.gov/pubmed/27029767)
 
@@ -393,19 +392,24 @@ knitr::include_graphics("images/obstacles.jpg")
 - Définir des conditions d’utilisation, restrictions d’accès, embargo, …
 - Associer un DOI pour permettre citation durable.
 - Utiliser des Métadonnées  disciplinaires détaillées (DDI).
-- Utiliser dépôt disciplinaire spécialisé.
+- Utiliser des dépôts de données (disciplinaires ou généralistes).
 
-<br>
 
-[*How to make your data FAIR*](https://www.openaire.eu/how-to-make-your-data-fair)
+Principes et pratiques [*FAIR*](https://www.openaire.eu/how-to-make-your-data-fair)
 
 .justify-center[
-```{r, out.width = "400px", echo = FALSE}
+```{r, out.width = "300px", echo = FALSE}
 knitr::include_graphics("images/fair.png")
 ```
     ]
 
+Principes et pratiques de la science ouverte: [Open Science Framework](https://osf.io/)
 
+.justify-center[
+```{r, out.width = "200px", echo = FALSE}
+knitr::include_graphics("images/osf.png")
+```
+    ]
 
 ---
 
@@ -433,50 +437,44 @@ knitr::include_graphics("images/cycle.png")
 
 ### Plan de gestion des données de recherche
 
-- Court document rédigé au début de la recherche qui décrit les pratiques de gestion des données (production, traitement, documentation, conservation, diffusion) qui seront appliquées tout au long de la recherche, incluant le partage et la préservation à long terme.  
-
-- Pas "seulement" une contrainte administrative.  
-
-- Outil de travail pour développer de bonnes pratiques de gestion tout au long du processus de recherche, en tenant compte des particularités disciplinaires.  
-
-- Se poser les bonnes questions dès le début du processus pour éviter les surprises et surcharge de travail à la fin.  
+- Court document (variable!) rédigé au début de la recherche (idéalement!) qui décrit les pratiques de gestion des données (production, traitement, documentation, conservation, diffusion) qui seront appliquées tout au long de la recherche, incluant le partage et la préservation à long terme.  
+- Pas "seulement" une contrainte administrative -> **Outil de travail** pour développer de bonnes pratiques de gestion tout au long du processus de recherche, en tenant compte des particularités disciplinaires.  
+- Se poser les bonnes questions dès le début du processus pour éviter les surprises et surcharge de travail à la fin. 
+- Expliquer le *comment* et le *pourquoi*.
+- Processus itératif de la recherche -> *Document vivant*.
 
 <br> 
 
 - [Exemples de PGD Portage complétés et autres ressources](https://portagenetwork.ca/fr/outils-et-ressources/ressources-de-formation-de-portage/)  
-
 - [Public DMPs (DMPTool)](https://dmptool.org/public_plans)  
-
 - [Natural Science Examples (ICPSR)](https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/resources.html#a06)  
-
 - [Example DMPs (DataOne)](https://www.dataone.org/data-management-planning)  
-
 - [Example DMPs and guidance (Digital Curation Centre)](http://www.dcc.ac.uk/resources/data-management-plans/guidance-examples)
 
 ---
 ### Outils de gestion de données de recherche > 
 
-https://portagenetwork.ca/fr/
-
-**Initiative de l’ABRC**
-
 .justify-right[
 ```{r, out.width = "200px", echo = FALSE}
-knitr::include_graphics("images/portage.png")
+knitr::include_graphics("images/pgd.png")
 ```
     ]
 
-**Deux principaux objectifs** :
-1. Créer un réseau d’expertise:
+[**Assistant PGD**](https://assistant.portagenetwork.ca/)
+
+
+**Initiative de [Portage](https://portagenetwork.ca/fr/**)
+
+
+**Principaux objectifs** :
+1. Création un réseau d’expertise:
   - Confidentialité, sécurité des données.
   - Gestion et préservation des données.
   - Exploration de données (data discovery).
   - Plans de gestion de données.
-2. Créer un système national de conservation et d’exploration des données pour relier les infrastructures canadiennes:
-  - Coopération avec Données de Recherche Canada, Compute Canada et les dépôts de données existants. 
-  - Projet pilote pour les dépôts de SFU et le Dataverse de Scholars’ Portal.
-
-[**Assistant PGD**](https://assistant.portagenetwork.ca/fr)
+2. Création de services et d'une infrastructure de gestion des données de recherche.
+2. Création d'une plateforme canadienne à partir de laquelle les données de recherche pourront être chargées, organisées, préservées, explorées, citées et partagées (collaboration avec Données de Recherche Canada, Compute Canada, l'association des bibliothèques de recherche du Canada):
+[**DFDR: Dépôt fédéré de données de recherche**](https://demo.frdr-dfdr.ca/repo/?locale=fr)
 
 
     
@@ -484,7 +482,12 @@ knitr::include_graphics("images/portage.png")
 
 class:  middle, center, background
 
-### 7 aspects à considérer
+
+### Assistant PGD
+
+--
+
+### 7 volets à considérer
 
 
 ---

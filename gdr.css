@@ -44,13 +44,16 @@ background-position: top right;
 .content-box-border {
     border-radius: 5px;
     margin: 0 0 5px;
-    overflow: hidden;
-    padding: 2px;
+    padding: 10px;
     width: 100%;
 }
 
 .content-box-blue {
       background-color: rgba(0, 107, 182,.75); 
+          border-radius: 5px;
+    margin: 0 0 5px;
+    padding: 10px;
+    width: 100%;
 }
 
 
