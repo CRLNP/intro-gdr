@@ -4,7 +4,8 @@
     <title>Gestion et diffusion des données de recherche</title>
     <meta charset="utf-8" />
     <meta name="author" content="  Caroline Patenaude    Bibliothèque des lettres et sciences humaines" />
-    <meta name="date" content="2021-03-08" />
+    <meta name="date" content="2021-11-15" />
+    <script src="index_files/header-attrs-2.11/header-attrs.js"></script>
     <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="gdr.css" type="text/css" />
   </head>
@@ -14,7 +15,7 @@ class: right, top, title-slide
 
 # Gestion et diffusion des données de recherche
 ### <br /> Caroline Patenaude<br /> <br /> Bibliothèque des lettres et sciences humaines
-### 2021-03-08
+### 2021-11-15
 
 ---
 
@@ -29,9 +30,11 @@ class:  middle
 
 - Contexte général de la gestion et du partage des données de recherche
 - Acteurs impliqués
-- Tendances actuelles et projets à venir
-- Plan de gestion de données de recherche - *Portage*
-- Dépôts de données et autres outils - *Dataverse*
+- Tendances actuelles
+- Bonnes pratiques de base 
+- Deux outils: 
+  - Plan de gestion de données de recherche - *Portage*
+  - Dépôts de données et autres outils - *Dataverse*
 ]
 
 .pull-right[
@@ -45,42 +48,22 @@ https://www.elsevier.com/connect/open-science-needs-open-minds
 
 ---
 
-## libre accès et données ouvertes
+### L'évolution du partage des données de recherche
 
-&lt;img src="images/logo.png" width="1529" /&gt;
-
-- [Open Government Canada](http://open.canada.ca/en/open-data)
-- [Données Québec: Accueil](https://www.donneesquebec.ca/)
-- [Données ouvertes de la Ville de Québec](http://donnees.ville.quebec.qc.ca/)
-- [Portail données ouvertes Montréal](http://donnees.ville.montreal.qc.ca/)
+&lt;img src="images/eco.png" width="1324" /&gt;
 
 
----
-
-## Ouverture des données gouvernementales à des fins de recherche
+-  *[Standard Charts and Tables: Original Data](https://www.jstor.org/stable/1928764?origin=crossref&amp;seq=18#metadata_info_tab_contents)*, 1919 - The Review of Economics and Statistics
 
 
-Mémoire, Rémi Quirion, Scientifique en chef, 2015&lt;sup&gt;1&lt;/sup&gt;
+- [Gary King, "Replication, Replication", *PS: Political Science &amp; Politics*, 1995](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/replication-replication/85C204B396C5060963589BDC1A8E7357)   
 
-.scriptsize[
-&gt; Faisant de la recherche une priorité stratégique pour le développement du Québec et le mieux être des citoyens, nous croyons **qu’il ne suffit pas « d’ouvrir » l’accès aux données gouvernementales par le biais de la mise en ligne de jeux de données ouvertes sélectionnées par les ministères et organismes**. Il faut aller plus loin. Il faut offrir à des chercheurs, dont les projets de recherche sont reconnus par leurs pairs et approuvés par un comité d’éthique, **un accès aux données administratives brutes détenues par des ministères et organismes gouvernementaux**. (p.5)
-
-&gt; L’activité de recherche ne peut se faire sans un accès efficace et en temps utile à des données « personnelles » (au sens de la Loi sur l’accès) et de qualité. Dans ce changement de culture que souhaite instaurer le gouvernement, il faut susciter un **biais favorable pour les activités de recherche approuvées par des pairs et des comités d’éthique, notamment celles menées par des chercheurs financés par des fonds publics fédéraux et provinciaux**. (p.7)
-]
-
-&lt;br&gt;
-
--&gt; **Projet de loi no 64** - [*Loi modernisant des dispositions législatives en matière de protection des renseignements personnels*](http://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-64-42-1.html)
-
-.footer-note[
-[1] [Orientations gouvernementales pour un gouvernement plus transparent, dans le respect du droit à la vie privée et la protection des renseignements personnels](http://www.scientifique-en-chef.gouv.qc.ca/wp-content/uploads/2015-09-24-Memoire_gouv_transparent_FRQ.pdf)
-
-]
-
+"Political science is a community enterprise; the community of empirical political scientists needs access to the body of data necessary to replicate existing studies to understand, evaluate, and especially build on this work. Unfortunately, the norms we have in place now do not encourage, or in some cases even permit, this aim."
 
 ---
 
-## Des données gouvernementales aux données de recherche
+### L'évolution du partage des données de recherche
+
 
 - Reconnaissance de la valeur des données -&gt; Accès aux données devient enjeu social, économique et politique &gt; Retour sur l’investissement gouv.
 - Développement de nouvelles technologies et infrastructures permettant la diffusion et l’exploitation de gros volume de données.
@@ -94,74 +77,90 @@ Mémoire, Rémi Quirion, Scientifique en chef, 2015&lt;sup&gt;1&lt;/sup&gt;
 
 ---
 
-## Mobilisation des acteurs entourant les chercheurs
+### Mobilisation des acteurs entourant les chercheurs
 
 &lt;img src="images/institutions2.png" width="1503" style="display: block; margin: auto;" /&gt;
 
 ---
 
-## Organismes subventionnaires
+### Organismes gouvernementaux
 
-[*Déclaration de principes des trois organismes sur la gestion des données numériques*](http://www.science.gc.ca/eic/site/063.nsf/fra/h_83F7624E.html)
+#### Politiques et lignes directrices canadiennes (CRSH, IRSC, CRSNG):   
+- Document de référence principal: [*Politique des trois organismes sur la gestion des données de recherche*](https://www.science.gc.ca/eic/site/063.nsf/fra/h_97610.html)
 
-[*ÉBAUCHE Politique des trois organismes sur la gestion des données de recherche [Aux fins de consultation]*](http://www.science.gc.ca/eic/site/063.nsf/fra/h_97610.html)
+#### 3 volets :    
 
+#### 1. Stratégie institutionnelle
 
-#### Stratégie institutionnelle
-
+.scriptsize[
 &gt; Chaque établissement qui administre des fonds des trois organismes doit créer une **stratégie institutionnelle de gestion des données de recherche**.
+]
 
-#### Plans de gestion des données
+#### 2. Plans de gestion des données
 
-&gt; Les organismes **incitent les demandeurs à dresser des plans de gestion des données** comme étape essentielle de la conception de projets de recherche. Pour certaines occasions de financement, les organismes subventionnaires peuvent demander que les **plans de gestion des données soient soumis à l’organisme approprié au moment de la demande**; dans ces cas, les plans de gestion des données peuvent être examinés dans le processus de prise de décision.
-
----
-
-## Organismes subventionnaires
-
-[*Déclaration de principes des trois organismes sur la gestion des données numériques*](http://www.science.gc.ca/eic/site/063.nsf/fra/h_83F7624E.html)
-
-
-[*ÉBAUCHE Politique des trois organismes sur la gestion des données de recherche [Aux fins de consultation]*](http://www.science.gc.ca/eic/site/063.nsf/fra/h_97610.html)
-
-
-#### Dépôt des données
-
-&gt; Les détenteurs de subvention sont tenus de déposer, dans un dépôt numérique reconnu, les données de recherche numérique, les métadonnées et les codes qui appuient directement les conclusions de la recherche dans les publications de revues, des préimpressions et d’autres résultats de recherche qui découlent de la recherche appuyée par les organismes subventionnaires. Ce dépôt numérique assurera l’entreposage, la préservation et la conservation sûrs des données. **Les organismes incitent les chercheurs à donner accès aux données pour autant que les exigences éthiques, juridiques et commerciales le permettent et conformément aux normes propres à leurs disciplines**.
-
--&gt; [Exigences des principaux organismes subventionnaires](https://bib.umontreal.ca/gerer-diffuser/gestion-donnees-recherche?tab=2302) (CRSH, IRSC, CRSNG, NIH...)
+.scriptsize[
+&gt; Toutes les demandes de subvention soumises aux organismes subventionnaires devraient inclure des méthodologies qui tiennent compte des meilleures pratiques en matière de gestion des données de recherche. Pour **certaines occasions de financement, les organismes subventionnaires demanderont que les plans de gestion des données soient soumis à l’organisme approprié au moment de la demande**, comme il est précisé dans l’appel de propositions. Dans ces cas, les plans de gestion des données seront examinés dans le processus de prise de décision..
+]
 
 ---
 
-### Initiatives institutionnelles de Gestion de données de recherche (GDR) au Canada/Québec
-
-Les institutions américaines et britanniques ont développés des centres d’expertises, des programmes et des politiques plus «contraignantes» de GDR depuis plusieurs années déjà (UK Research Councils, Horizon 2020 , NIH, NSF,…)
-
-**Le Canada et le Québec sont à la traine mais se rattrapent rapidement**:
-
-- Beaucoup de discussions, de comités, de rapports.
-- Plusieurs groupes impliqués: [ABRC](https://www.carl-abrc.ca/fr/), [Données de Recherche Canada](https://www.rdc-drc.ca/fr/),  [Calcul Canada](https://www.computecanada.ca/?lang=fr), [Canarie](https://www.canarie.ca/rdm/), [NOIRN](https://www.engagedri.ca/), ...
-- Quelques dépôts de données ([Dataverse de Scholar’s Portal](https://dataverse.scholarsportal.info/), [FRDR](https://www.frdr-dfdr.ca/repo/), dépôts disciplinaires dont [CIOOS](https://catalogue.cioos.ca/)).
+### Organismes gouvernementaux
 
 
-**Peu de choses au Québec mais ça s’en vient**...
+#### 3. Dépôt des données
 
-- Groupes de travail BCI.
-- Traduction de l’outil d'aide à la préparation d'un plan de gestion des données Portage.
-- Création de Dataverse(s) institutionnel(s) dans l’instance ontarienne pour les universités québécoises (dont l’UdeM).
 
+.scriptsize[
+&gt; Les titulaires de subvention sont **tenus de déposer dans un dépôt numérique les données de recherche, les métadonnées et les codes qui appuient directement les conclusions de la recherche publiées** dans des revues de même que les préimpressions découlant de la recherche financée par les organismes subventionnaires.[...] 
+
+&gt; Le dépôt doit être effectué au **moment de la publication**. Le choix du dépôt peut être guidé par les attentes de la discipline et le jugement du destinataire, mais dans tous les cas, le dépôt doit assurer le stockage, la conservation et la curation sécuritaires des données. [...] 
+
+&gt; Les titulaires de subvention **ne sont pas tenus de partager leurs données**, mais les organismes subventionnaires s’attendent à ce que les chercheurs donnent un accès convenable aux données pour autant que les exigences éthiques, culturelles, juridiques et commerciales le permettent, et conformément aux principes FAIR et aux normes propres à leurs disciplines .
+]
+
+&lt;br&gt;
+
+-&gt; NB. Cette directive n'est toujours pas entrée en vigueur (pas pour demain!)
 
 ---
 
-### Initiatives institutionnelles de Gestion de données de recherche (GDR) : UdeM
+### Organismes gouvernementaux
 
-Comité consultatif sur la GDR ([BRDV](https://recherche.umontreal.ca/services-aux-chercheurs/de-lidee-a-la-valorisation/), [TI](https://ti.umontreal.ca/), [BVI](https://bvi.umontreal.ca/bureau/role-et-mandat/), [CEN-R](https://recherche.umontreal.ca/services-aux-chercheurs/expertise-numerique/),  [BCRR](https://recherche.umontreal.ca/responsabilite-en-recherche/conduite-responsable/), [Direction des bibliothèques](https://bib.umontreal.ca/gerer-diffuser/gestion-donnees-recherche)...
+#### Politiques et lignes directrices:  
+- Autre document important: [*Énoncé de politique des trois conseils : Éthique de la recherche avec des êtres humains – EPTC 2 (2018)*](https://ethics.gc.ca/fra/documents/tcps2-2018-fr-interactive-final.pdf)   
+  - [*Versement des données existantes dans des dépôts publics Lignes directrices sur l’application de l’EPTC 2*](https://ethics.gc.ca/fra/documents/guidance_depositing_data-fr.pdf)
 
-#### [Extrait du plan stratégique 2016-2021 Transcender les frontières](https://transformation.umontreal.ca/documents/plan-daction-2016-2021-transcender-les-frontieres/)
 
+.scriptsize[
+&gt; Les chercheurs peuvent verser des données précédemment recueillies dans un dépôt,
+**dans la mesure où cela respecte les limites imposées par le consentement du participant**.
+Lorsqu’il est pratiquement impossible d’obtenir le consentement des participants, les chercheurs
+peuvent demander au Comité d’éthique de la recherche (CER) d’approuver une exception
 
-&lt;img src="images/udem.png" width="600px" style="display: block; margin: auto;" /&gt;
+&gt; Si le dépôt des données pour une utilisation future à des fins de recherche n’a pas déjà été
+mentionné dans le processus de consentement, et qu’on ne sait pas si les participants
+accepteraient ou non d’être recontactés, **les chercheurs doivent les recontacter pour obtenir leur consentement au dépôt des données**.
 
+&gt; Si rien n’indique que les participants ont refusé l’utilisation future de leurs données et que les
+chercheurs ne peuvent pas obtenir le consentement des participants parce que cela est
+pratiquement impossible, **les chercheurs peuvent déposer les données sous réserve de
+l’approbation du CER**.
+]
+
+---
+
+### Initiatives institutionnelles de GDR au Canada/Québec
+
+Les institutions américaines et britanniques ont développés des centres d’expertises, des programmes et des politiques plus contraignantes depuis plusieurs années déjà.
+
+**Le Canada et le Québec se rattrapent rapidement**:
+
+- Plusieurs groupes impliqués: [ABRC](https://www.carl-abrc.ca/fr/), [Données de Recherche Canada](https://www.rdc-drc.ca/fr/),  [Calcul Canada](https://www.computecanada.ca/?lang=fr)/[Calcul Québec](https://www.calculquebec.ca/), [Canarie](https://www.canarie.ca/rdm/), [NOIRN](https://www.engagedri.ca/), ...
+
+- Plusieurs dépôts de données ont été développées ([Dataverse de Scholar’s Portal](https://dataverse.scholarsportal.info/), [FRDR](https://www.frdr-dfdr.ca/repo/), dépôts disciplinaires dont [CIOOS](https://catalogue.cioos.ca/)).
+- Développement d'outils ([Assistant PGD](https://assistant.portagenetwork.ca/?locale=fr_CA)) et autres ressources de soutien (réseau [Portage](https://portagenetwork.ca/fr/))
+-  À l'UdeM: groupe de travail BCI, Comité consultatif ( [BRDV](https://recherche.umontreal.ca/services-aux-chercheurs/de-lidee-a-la-valorisation/), [TI](https://ti.umontreal.ca/),  [CEN-R](https://recherche.umontreal.ca/services-aux-chercheurs/expertise-numerique/),  [BCRR](https://recherche.umontreal.ca/responsabilite-en-recherche/conduite-responsable/), [Direction des bibliothèques](https://bib.umontreal.ca/gerer-diffuser/gestion-donnees-recherche)) 
+et lancement du [dépôt institutionnel Dataverse](https://dataverse.scholarsportal.info/fr/).
 
 ---
 
@@ -198,7 +197,7 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 ---
 
 
-### Les éditeurs et périodiques
+### Les associations scientifiques
 
 
 &lt;br&gt; 
@@ -365,11 +364,11 @@ The Editors may choose to reject your manuscript if you are unwilling (rather th
 
 **Solutions se trouvent dans les pratiques et outils de gestion de données de recherche:**
 
-- Attribuer une licence aux données.  
-- Définir des conditions d’utilisation, restrictions d’accès, embargo, …
-- Associer un DOI pour permettre citation durable.
-- Utiliser des Métadonnées  disciplinaires détaillées (DDI).
 - Utiliser des dépôts de données (disciplinaires ou généralistes).
+- Associer un DOI pour permettre citation durable.
+- Utiliser des Métadonnées disciplinaires détaillées (DDI).
+- Attribuer une licence aux données.  
+- Définir des conditions d’utilisation, restrictions d’accès, embargo...
 
 
 Principes et pratiques [*FAIR*](https://www.openaire.eu/how-to-make-your-data-fair)
@@ -432,7 +431,7 @@ Principes et pratiques de la science ouverte: [Open Science Framework](https://o
 [**Assistant PGD**](https://assistant.portagenetwork.ca/)
 
 
-**Initiative de [Portage](https://portagenetwork.ca/fr/**)
+Initiative de [**Portage**](https://portagenetwork.ca/fr/)
 
 
 **Principaux objectifs** :
@@ -580,7 +579,7 @@ class:  middle, center, background
 ]]
 ---
 
-### Conformité aux lois et à l'éthique
+### Conformité aux lois et à l'éthique (1/3)
 
 .full-width[.content-box-blue[
 - Si votre projet comprend des données sensibles, comment vous assurerez-vous qu'il est géré de manière sécuritaire et que les données sont accessibles uniquement aux membres approuvés du projet? 
@@ -591,21 +590,60 @@ class:  middle, center, background
 
 **Bonnes pratiques**
 - Recherche auprès d’individus &gt; formulaires de consentement obligatoires.
+- Consulter le [Bureau de l’éthique de la recherche](http://www.recherche.umontreal.ca/ethique-de-la-recherche/ethique/) avec les êtres humains de l’UdeM.
+- Se renseigner sur les lois relatives à la protection des renseignements personnels - [Commission d'accès à l'information du Québec](https://www.cai.gouv.qc.ca/chercheurs/informations-complementaires/)
 - Utiliser des outils d’anonymisation – identifiants directs et indirects: [ARX Anonymisation  Tool](https://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/), [packages R](https://cran.r-project.org/web/packages/sdcMicro/index.html).
-- Dépôts de données avec embargo, encryptage, restrictions d’utilisation.
-- Consulter les politique du [Bureau de l’éthique de la recherche](http://www.recherche.umontreal.ca/ethique-de-la-recherche/ethique/) avec les êtres humains de l’UdeM.
-- La protection des renseignements personnels - [Commission d'accès à l'information du Québec](https://www.cai.gouv.qc.ca/chercheurs/informations-complementaires/)
+- Utiliser un dépôt qui permet la restriction d'utilisation (embargo, accès sur demande...)
 
 ]]
 ---
 
-class:  middle, center, background
+### Conformité aux lois et à l'éthique (2/3)
 
-### Dépôts de données de recherche
+#### La délicate question des données sensibles 
+
+- Difficile d'avoir l'heure juste en matière de protection de la confidentialité 
+- Différentes perspectives parfois contradictoires: approche normative (EPTC2 - politique fédérale d'éthique de la recherche) vs juridique (droit relatif à chaque pays ou province - surtout provincial)
+
+.justify-right[
+&lt;img src="images/consentement.png" width="100px" /&gt;
+    ]
+
+**Que dit l'EPTC2?**
+
+À la base **tous** les chercheurs qui oeuvrent au sein d'institutions qui gèrent des subventions des trois conseils doivent se soumettre aux règles de l'EPTC2, après s'appliquent les normes et lois provinciales, institutionnelles...
+
+
+Pour des données (même anonymisées) receuillies dans le cadre d'une recherche faites auprès d'individus où le formulaire de consentement ne mentionnait pas explicitement le partage et la rediffusion:
+
+- Il faut aller chercher le consentement auprès des participants (*re-consent*).
+- Si c'est impossible, obligation d'aller chercher l'approbation du comité d'éthique en justifiant cette dérogation.
+
+---
+
+### Conformité aux lois et à l'éthique (3/3)
+
+#### **Conclusions: **
+
+
+- **Pas de consentement + pas d'approbation du CER = pas de dépôt**
+
+Le CER a l'obligation de statuer, mais le "fardeau éthique" repose sur les épaules du chercheur (les décisions peuvent dépendre de différents facteurs dont la sensibilité , la vulnérabilité des participants...)
+
+&lt;br&gt;
+
+- **Nécessité de prévoir le partage des données dès le début du projet!**
+
+&lt;br&gt;
+
+-&gt; [Outils pour les données sensibles du réseau Portage](https://portagenetwork.ca/fr/nouvelles/nouveaux-outils-pour-les-donnees-sensibles/) 
 
 
 ---
-### Types de dépôts
+
+### Dépôts de données de recherche
+
+#### Types de dépôts
 
 .tiny[
 |                  **Généralistes**       | **Institutionnels (académiques)**    | **Disciplinaires/spécialisés** |

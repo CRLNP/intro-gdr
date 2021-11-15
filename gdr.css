@@ -24,7 +24,7 @@ background-position: top right;
 .large { font-size: 120% }
 .small { font-size: 90% }
 .footnotesize { font-size: 80% }
-.scriptsize { font-size: 70% }
+.scriptsize { font-size: 80% }
 .tiny { font-size: 60% }
 .verytiny { font-size: 40% }
 
@@ -44,7 +44,7 @@ background-position: top right;
 .content-box-border {
     border-radius: 5px;
     margin: 0 0 5px;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
 }
 
@@ -52,7 +52,7 @@ background-position: top right;
       background-color: rgba(0, 107, 182,.75); 
           border-radius: 5px;
     margin: 0 0 5px;
-    padding: 10px;
+    padding: 0px;
     width: 100%;
 }
 
