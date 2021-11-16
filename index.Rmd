@@ -726,6 +726,15 @@ Document créé avec le package R [**xaringan**](https://github.com/yihui/xaring
  
 caroline.patenaude@umontreal.ca 
 
+ <br>
+ 
+https://bib.umontreal.ca/guides/donnees-statistiques-geospatiales/donnees-statistiques
+ 
+ <br>
+
+https://github.com/CRLNP
+
+
 
 ---
 class: center, bottom
